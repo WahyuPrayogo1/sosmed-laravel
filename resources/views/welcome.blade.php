@@ -449,6 +449,7 @@ Header END -->
 
                 <!-- Main content START -->
                 <div class="col-md-8 col-lg-6 vstack gap-4">
+                    @auth
                     <!-- Story START -->
                     <div class="tiny-slider arrow-hover overflow-hidden">
                         <div class="tiny-slider-inner ms-n4" data-arrow="true" data-dots="true" data-loop="false"
@@ -547,9 +548,11 @@ Header END -->
                             </div>
                         </div>
                     </div>
+                    @endauth
                     <!-- Story END -->
 
                     <!-- Share feed START -->
+                    @auth
                     <div class="card card-body">
                         <div class="d-flex mb-3">
                             <!-- Avatar -->
@@ -605,6 +608,7 @@ Header END -->
                         </ul>
                         <!-- Share feed toolbar END -->
                     </div>
+                    @endauth
                     <!-- Share feed END -->
 
                     <!-- Card feed item START -->
