@@ -29,7 +29,7 @@
                                     <tr>
                                         <td>{{ $key + 1 }}</td>
                                         <td>{{ $postingan->body }}</td>
-                                        <td><img src="{{ asset('storage/' . $postingan->image) }}" alt="Image"
+                                        <td><img src="{{ asset('storage/postingans/' . $postingan->image) }}" alt="Image"
                                                 width="100"></td>
                                         <td>
                                             <a href="{{ route('postingans.show', $postingan->id) }}"

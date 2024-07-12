@@ -14,7 +14,7 @@
             <label for="image">Image</label>
             <input type="file" name="image" id="image" class="form-control">
             @if($postingan->image)
-                <img src="{{ asset('storage/' . $postingan->image) }}" alt="Image" width="100">
+                <img src="{{ asset('storage/postingans/' . $postingan->image) }}" alt="Image" width="100">
             @endif
         </div>
         <button type="submit" class="btn btn-primary">Update</button>
